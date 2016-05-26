@@ -127,6 +127,7 @@ textarea:-ms-input-placeholder {
 .sliderFlash{
     position:relative;
     width:100%;
+    overflow: hidden;
 
 }
 .slider >li{
