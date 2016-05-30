@@ -142,7 +142,7 @@ textarea:-ms-input-placeholder {
 
 /* Nav style block */
 
-.directionNav li{
+ol.directionNav li{
     cursor: pointer;
     width:45px;
     height:45px;
@@ -152,12 +152,37 @@ textarea:-ms-input-placeholder {
     background:url(../../images/arrow.png) no-repeat;
     background-size: 45px;
 }
-.directionNav li.left{
+ol.directionNav li.left{
     left:0;
 }
-.directionNav li.right{
+ol.directionNav li.right{
     right:0;
     transform:rotate(180deg);
     -moz-transform:rotate(180deg);    /* Firefox */
     -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+}
+
+/*暂停按钮样式*/
+ol.pauseControl{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+ol.pauseControl li button{
+    width:50px;
+    height:50px;
+    color:white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+}
+ol.pauseControl li button:active{
+    opacity:0.8;
+}
+ol.pauseControl li button.pause{
+    background:#F81A62;
+}
+ol.pauseControl li button.play{
+    display:none;
+    background:#14C489;
 }
